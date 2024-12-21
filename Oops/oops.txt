@@ -1,0 +1,126 @@
+OOPS stands for object oriented programming  which allow us to work with real time objects.
+
+Some OOPS Concepts:-
+
+1. objects.
+2. Classes.
+3. Inheritence.
+4. Encapsulation.
+5. Abstraction.
+6. Polymorphism.
+
+
+1. Object:-> Object is a instance of class which havae properties, methods and identity.
+
+2. Class:-> CLass is a blueprint of object ,by seeing class name we got idea what type of object is going to create ahed.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+3. Inheritence:-> Inheritence is process of sharing the properties of one class to another using extends keyword.
+
+    Types of Inheritence:
+
+          i. Single Levle Inheritence:-> It is a type of inheritece in which only one class inherit properties from a parent
+                                         class at a time.
+
+                                         ex.
+                                         -----
+                                         class ABC{
+
+                                         }
+
+                                         class XYZ extends ABC{
+
+                                         }
+
+          ii. Multilevel Inheritence:-> It is a type of inheritece in which one class act as a subclass and same time 
+                                        act as a parent class for other class .
+
+                                         ex.
+                                         -----
+                                        class ABC{
+
+                                         }
+
+                                         class XYZ extends ABC{
+
+                                         }
+
+                                         class MNO extends XYZ{
+
+                                         }
+
+
+                                         In this XYZ is act as subclass of ABC and parent class of MNO
+
+
+          iii. Hierarchical Inheritence-> It is a type of inheritece in which more than one class extends a property of 
+                                          one class at a time.
+
+
+                                         ex.
+                                         -----
+
+                                        class ABC{
+
+                                         }
+
+                                         class XYZ extends ABC{
+
+                                         } 
+
+                                         class MNO extends ABC{
+
+                                         }
+
+          iv.Multiple Inheritence-> It is type of inheritence in which one class inherit prperties from more than one class at a time
+                                    It is not possible among the classes . Multiple inheritence possible with interfeces.
+
+
+
+
+            Inheritence is used for code reusability.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Encapsulation :-> It is process of wrapping a data member and member function together into a single unit.
+                    Encapsulation is used to achieve data hiding.
+
+                    if we want to perform encapsulation 
+
+                    then all variables are private and getter setter for all of them
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+5. Abstraction :-> Abstraction is a process of hiding unneccesssry details and showing essential features of method.
+
+                    Abstraction is use to achieve method standralization.
+
+
+                    we can acheive abstraction 
+
+                     using 
+
+                     1. abstract class.
+                     2. interface.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+6. Polymorphism :-> Polymorphism means anything haveing Multiple form 
+                    it is a process of performing single task in many ways.
+                    there are two types of Polymorphism in OOPS
+
+                    1. Complie Time Polymorphism (Method Overloading):->
+                        -------------------------------------------
+                        It is a process of declaring multiple number of method with same name but diffrent number ,type or order of ther parameter.
+
+
+                    2. Run Time Polymorphism (Method Overriding):->
+                       -------------------------------------------
+                       It is a process of reimplementing a non static method of super class into sub class based on sub class requireents.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
