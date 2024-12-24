@@ -1,7 +1,19 @@
 
 //Generics can be used to create generalized classes, like Map.
+
+
+interface Emp{
+    id:number;
+    name:string;
+    dept:string;
+}
+
 class Employee<T>{
+    obj:T;
     private value!:T;
+    constructor(data:T){
+        this.obj=data;
+    }
 
     public setValue(value:T):void{
         this.value=value;
@@ -12,15 +24,11 @@ class Employee<T>{
     }
 }
 
-//creating number type variable;
-const emp=new Employee<number>();
-emp.setValue(20);
-const value:number=emp.getValue();
-console.log(value);
+const obj:Emp={
+    id:10,
+    name:"Yash",
+    dept:"HR"
+}
 
-
-//creating number type variable;
-const emp2=new Employee<string>();
-emp2.setValue("Yash");
-const value2:string=emp2.getValue();
-console.log(value2);
+const emp:Employee<Emp>=new Employee(obj);
+console.log(emp.obj);

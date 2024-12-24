@@ -1,0 +1,43 @@
+Decorators are a special feature in TypeScript that allow us to add functionality or change the behavior of classes, methods, properties, or parameters at runtime.
+
+Key Points:
+- Decorators are applied using the `@` symbol before the target.
+- Decorators execute immediately when the class or method they are applied to is defined.
+- Even if no object of the class is created, the decorator is executed.
+
+Steps:
+1. Enable `experimentalDecorators` in tsconfig.json.
+2. Create a decorator function, e.g., `logger`, which takes the target (class or method) as a parameter.
+3. Apply the decorator to a class using `@logger`.
+
+Example:
+
+    function logger(target: Function) {
+        console.log("Decorator executed for:", target.name);
+    }
+
+    @logger
+    class User {
+        constructor() {
+            console.log("User instance created");
+        }
+    }
+
+Execution:
+- When the class `User` is defined, the `logger` decorator executes first.
+- When an object of the `User` class is created, the constructor executes.
+
+-If we not create `User` obj then also decorator will work.
+
+
+
+--every class in typescript implementd as a constructor function.
+   ex;
+     User class behind the scene.
+
+     constructor{
+        consloe.log("User instance created);
+     }
+
+
+--Decorators execute design time when our class or method defined then decorators execute.
